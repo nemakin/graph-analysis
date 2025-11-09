@@ -25,7 +25,7 @@ jobs:
           cd gbtl
           mkdir build
           cd build
-          cmake ..src
+          cmake ../src
           make -i -j8
 
       - name: Run prim binary with test dataset
