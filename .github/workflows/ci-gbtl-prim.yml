@@ -18,8 +18,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential cmake g++
 
-          vcpkg install boost
-
       - name: Configure & build GBTL
         working-directory: graph-analysis/gbtl
         run: |
