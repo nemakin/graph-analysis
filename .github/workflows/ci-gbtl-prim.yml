@@ -22,7 +22,6 @@ jobs:
           sudo rm /usr/local/bin/vcpkg
 
           git clone https://github.com/microsoft/vcpkg.git
-          sudo ln -s /path/to/your/vcpkg/vcpkg /usr/local/bin/vcpkg
           cd vcpkg
           ./bootstrap-vcpkg.sh
           
