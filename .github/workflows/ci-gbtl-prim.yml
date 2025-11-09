@@ -29,7 +29,7 @@ jobs:
           make -i -j8
 
       - name: Run prim binary with test dataset
-        working-directory: /home/runner/work/graph-analysis/gbtl/build
         run: |
           echo "Running prim_gbtl against small test dataset"
+          cd gbtl/build
           ./bin/prim_gbtl
