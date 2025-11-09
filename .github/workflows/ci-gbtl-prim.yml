@@ -1,0 +1,34 @@
+name: CI — build GBTL & run prim_gbtl
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential cmake g++ vcpkg
+          vcpkg install boost
+
+      - name: Configure & build GBTL
+        working-directory: graph-analysis/gbtl
+        run: |
+          mkdir build
+          cd build
+          cmake ..src
+          make -i -j8
+
+      - name: Run prim binary with test dataset
+        working-directory: graph-analysis/gbtl/build
+        run: |
+          echo "Running prim_gbtl against small test dataset"
+          ./bin/prim_gbtl
