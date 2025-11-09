@@ -17,10 +17,15 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y build-essential cmake g++
+          export TEMP_VAR=$(pwd)
+          cd /usr/local/bin/vcpkg
+          git pull
+          vcpkg update
+          cd TEMP_VAR
           vcpkg install boost
 
       - name: Configure & build GBTL
-        working-directory: gbtl
+        working-directory: graph-analysis/gbtl
         run: |
           mkdir build
           cd build
@@ -28,7 +33,7 @@ jobs:
           make -i -j8
 
       - name: Run prim binary with test dataset
-        working-directory: gbtl/build
+        working-directory: graph-analysis/gbtl/build
         run: |
           echo "Running prim_gbtl against small test dataset"
           ./bin/prim_gbtl
