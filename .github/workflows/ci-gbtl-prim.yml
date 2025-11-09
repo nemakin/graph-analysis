@@ -18,7 +18,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential cmake g++
           export TEMP_VAR=$(pwd)
-          cd /usr/local/bin/vcpkg
+          export path_to_vcpkg=$(ls -l /usr/local/bin/vcpkg)
+          cd path_to_vcpkg
           git pull
           vcpkg update
           cd TEMP_VAR
