@@ -16,9 +16,11 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
+          sudo apt-get upgrade -y
           sudo apt-get install -y build-essential cmake g++
           export TEMP_VAR=$(pwd)
-          export path_to_vcpkg=$(ls -l /usr/local/bin/vcpkg)
+          path_to_vcpkg=$(readlink -f /usr/local/bin/vcpkg)
+          export path_to_vcpkg
           cd $path_to_vcpkg
           git pull
           vcpkg update
