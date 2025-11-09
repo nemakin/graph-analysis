@@ -21,8 +21,8 @@ jobs:
           sudo apt-get install -y build-essential cmake g++
 
       - name: Configure & build GBTL
-        working-directory: /home/runner/work/graph-analysis/gbtl
         run: |
+          cd gbtl
           mkdir build
           cd build
           cmake ..src
