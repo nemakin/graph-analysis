@@ -18,12 +18,16 @@ jobs:
           sudo apt-get update
           sudo apt-get upgrade -y
           sudo apt-get install -y build-essential cmake g++
-          TEMP_VAR=$(pwd)
-          export TEMP_VAR
-          cd /usr/local/share/vcpkg
-          git pull
-          vcpkg update
-          cd $TEMP_VAR
+
+          sudo rm /usr/local/bin/vcpkg
+
+          git clone https://github.com/microsoft/vcpkg.git
+          sudo ln -s /path/to/your/vcpkg/vcpkg /usr/local/bin/vcpkg
+          cd vcpkg
+          cd ./bootstrap-vcpkg.sh
+          
+          sudo ln -s . /usr/local/bin/vcpkg
+
           vcpkg install boost
 
       - name: Configure & build GBTL
