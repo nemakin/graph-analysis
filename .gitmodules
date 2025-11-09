@@ -1,0 +1,9 @@
+[submodule "spla"]
+	path = spla
+	url = https://github.com/SparseLinearAlgebra/spla.git
+[submodule "SuiteSparse"]
+	path = SuiteSparse
+	url = https://github.com/DrTimothyAldenDavis/SuiteSparse.git
+[submodule "gbtl"]
+	path = gbtl
+	url = https://github.com/SurfaceYellowDuck/gbtl.git
