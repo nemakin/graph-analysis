@@ -24,6 +24,7 @@ This repository contains implementations and comparisons of graph algorithms (Pr
 ## Algorithms
 
 ### Prim's Minimum Spanning Tree (MST)
+- Implementation using GBTL
 - Implementation using SPLA
 - Implementation using SuiteSparse:GraphBLAS
 
