@@ -1,10 +1,13 @@
 #include <spla.hpp>
-#include <algorithm.hpp>
+#include <spla/algorithm.hpp>
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <cassert>
 #include <chrono>
+#include <filesystem>
+#include <vector>
+#include <algorithm>
 using namespace spla;
 
 static spla::ref_ptr<spla::Matrix> a;
@@ -72,7 +75,7 @@ int main()
 {
     try
     {
-        std::filesystem::path graph_path = "/Users/nikitalukonenko/Studying/third_course/experiment/sources/gbtl/datasets/graph500-scale18-ef16_adj.mmio";
+        std::filesystem::path graph_path = "../datasets/graph500-scale19-ef16_adj.mmio";
         load_graph_mm(graph_path);
         b = spla::Matrix::make(max_node_id, max_node_id, spla::INT);
         b->set_format(spla::FormatMatrix::AccCsr);
