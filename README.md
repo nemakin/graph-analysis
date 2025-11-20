@@ -6,6 +6,13 @@ This repository contains implementations and comparisons of graph algorithms (Pr
 - [SuiteSparse:GraphBLAS](https://github.com/DrTimothyAldenDavis/GraphBLAS)
 - [SPLA (Sparse Linear Algebra)](https://github.com/JetBrains-Research/spla)
 
+## Experiments
+
+The following experiments were conducted by Nikita Lukonenko:
+
+1. Comparison of Prim's algorithm implementations on the following libraries: SPLA, SuiteSparse:GraphBLAS, and GBTL.
+2. Comparison of Sandia's Delta-Stepping SSSP implementations on the following libraries: SPLA and SuiteSparse:GraphBLAS.
+
 ## Repository Structure
 
 ```
@@ -14,7 +21,7 @@ This repository contains implementations and comparisons of graph algorithms (Pr
 ├── prim/              # Prim's algorithm implementations
 │   ├── prim_spla.cpp
 │   └── prim_SuiteSparse.c
-├── Sandia/            # Sandia's Delta-Stepping SSSP implementations
+├── Sandia/            
 │   ├── sandia_spla.cpp
 │   └── sandia_SuiteSparse.c
 ├── spla/              # SPLA library
