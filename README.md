@@ -11,7 +11,7 @@ This repository contains implementations and comparisons of graph algorithms (Pr
 The following experiments were conducted by Nikita Lukonenko:
 
 1. Comparison of Prim's algorithm implementations on the following libraries: SPLA, SuiteSparse:GraphBLAS, and GBTL.
-2. Comparison of Sandia's Delta-Stepping SSSP implementations on the following libraries: SPLA and SuiteSparse:GraphBLAS.
+2. Comparison of Sandia's implementations on the following libraries: SPLA and SuiteSparse:GraphBLAS.
 
 ## Repository Structure
 
