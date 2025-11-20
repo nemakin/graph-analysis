@@ -50,10 +50,6 @@ SuiteSparse:GraphBLAS is a complete implementation of the GraphBLAS standard, wh
 ### SPLA
 SPLA (Sparse Linear Algebra) is a high-performance library for sparse linear algebra computations, with support for various backends including CPU and OpenCL.
 
-## Dataset
-
-The repository includes a sample dataset:
-- `datasets/USA_road_d_COL.gr`: Road network of Colorado
 
 ## Building and Running
 
