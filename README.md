@@ -1,6 +1,6 @@
 # Graph Analysis - Algorithm Implementation Comparison
 
-This repository contains implementations and comparisons of graph algorithms (Prim's MST and Sandia's Delta-Stepping SSSP) using different GraphBLAS implementations:
+This repository contains implementations and comparisons of graph algorithms (Prim's MST and Sandia) using different GraphBLAS implementations:
 
 - [GBTL (Graph BLAS Template Library)](https://github.com/cmu-sei/gbtl)
 - [SuiteSparse:GraphBLAS](https://github.com/DrTimothyAldenDavis/GraphBLAS)
@@ -11,7 +11,7 @@ This repository contains implementations and comparisons of graph algorithms (Pr
 The following experiments were conducted by Nikita Lukonenko:
 
 1. Comparison of Prim's algorithm implementations on the following libraries: SPLA, SuiteSparse:GraphBLAS, and GBTL.
-2. Comparison of Sandia's implementations on the following libraries: SPLA and SuiteSparse:GraphBLAS.
+2. Comparison of Sandia implementations on the following libraries: SPLA and SuiteSparse:GraphBLAS.
 
 ## Repository Structure
 
@@ -35,7 +35,7 @@ The following experiments were conducted by Nikita Lukonenko:
 - Implementation using SPLA
 - Implementation using SuiteSparse:GraphBLAS
 
-### Sandia's Delta-Stepping Single-Source Shortest Path (SSSP)
+### Sandia
 - Implementation using SPLA
 - Implementation using SuiteSparse:GraphBLAS
 
