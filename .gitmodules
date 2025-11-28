@@ -7,3 +7,6 @@
 [submodule "gbtl"]
 	path = gbtl
 	url = https://github.com/SurfaceYellowDuck/gbtl.git
+[submodule "boruvka-spla-vs-pregelplus"]
+	path = boruvka-spla-vs-pregelplus
+	url = git@github.com:DmitryPilyuk/boruvka-spla-vs-pregelplus.git

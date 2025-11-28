@@ -1,6 +1,6 @@
 # Graph Analysis - Algorithm Implementation Comparison
 
-This repository contains implementations and comparisons of graph algorithms (Prim's MST and Sandia) using different GraphBLAS implementations:
+This repository contains implementations and comparisons of graph algorithms (Prim's MST, Boruvka's MST and Sandia) using different GraphBLAS implementations:
 
 - [GBTL (Graph BLAS Template Library)](https://github.com/cmu-sei/gbtl)
 - [SuiteSparse:GraphBLAS](https://github.com/DrTimothyAldenDavis/GraphBLAS)
@@ -13,10 +13,15 @@ The following experiments were conducted by Nikita Lukonenko:
 1. Comparison of Prim's algorithm implementations on the following libraries: SPLA, SuiteSparse:GraphBLAS, and GBTL.
 2. Comparison of Sandia implementations on the following libraries: SPLA and SuiteSparse:GraphBLAS.
 
+The following experiments were conducted by Dmitry Pilyuk:
+
+1. Comparison of Boruvka's algorithm implementations on the SPLA and Preel+.
+
 ## Repository Structure
 
 ```
 .
+├── boruvka-spla-vs-pregelplus # Comparison of Boruvka's implementations (By Dmitry Pilyuk)
 ├── gbtl/               # GBTL library and its implementation
 ├── prim/              # Prim's algorithm implementations
 │   ├── prim_spla.cpp
