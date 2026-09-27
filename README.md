@@ -17,16 +17,21 @@ The following experiments were conducted by Dmitry Pilyuk:
 
 1. Comparison of Boruvka's algorithm implementations on the SPLA and Preel+.
 
+The following experiments were conducted by Nikita Nemakin:
+
+1. Comparison of Burkhardt and Sandia algorithms implementations on the SPLA and SuiteSparse:GraphBLAS.
+
 ## Repository Structure
 
 ```
 .
+├── triangles # Comparison of Burkhardt and Sandia implementations (Nikita Nemakin)
 ├── boruvka-spla-vs-pregelplus # Comparison of Boruvka's implementations (By Dmitry Pilyuk)
 ├── gbtl/               # GBTL library and its implementation
 ├── prim/              # Prim's algorithm implementations
 │   ├── prim_spla.cpp
 │   └── prim_SuiteSparse.c
-├── Sandia/            
+├── Sandia/
 │   ├── sandia_spla.cpp
 │   └── sandia_SuiteSparse.c
 ├── spla/              # SPLA library
@@ -41,6 +46,10 @@ The following experiments were conducted by Dmitry Pilyuk:
 - Implementation using SuiteSparse:GraphBLAS
 
 ### Sandia
+- Implementation using SPLA
+- Implementation using SuiteSparse:GraphBLAS
+
+### Burkhardt
 - Implementation using SPLA
 - Implementation using SuiteSparse:GraphBLAS
 
