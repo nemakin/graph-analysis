@@ -10,3 +10,6 @@
 [submodule "boruvka-spla-vs-pregelplus"]
 	path = boruvka-spla-vs-pregelplus
 	url = git@github.com:DmitryPilyuk/boruvka-spla-vs-pregelplus.git
+[submodule "GraphBLAS"]
+	path = GraphBLAS
+	url = https://github.com/DrTimothyAldenDavis/GraphBLAS.git
